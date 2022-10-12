@@ -9,7 +9,11 @@ function App() {
     myFunction(counter+1)
   };
   const handleMinus=()=>{
-    myFunction(counter-1)
+    if (counter>0){
+      myFunction(counter-1)
+    } else{
+      alert('Counter is already at minimum value of 0')
+    }
   };
   const handleReset=()=>{
     myFunction(0);
